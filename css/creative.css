@@ -110,6 +110,9 @@ aside {
     background-color: transparent;
     border: 0;
   }
+  .navbar-default:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
   .navbar-default .navbar-header .navbar-brand {
     color: rgba(255, 255, 255, 0.7);
   }
