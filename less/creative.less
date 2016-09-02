@@ -79,11 +79,13 @@ aside {
     .sans-serif-font;
     .transition-all;
     .navbar-header .navbar-brand {
+        padding: 5px 15px;
         color: @theme-primary;
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
         .logo {
+          display: inline-block;
           height: 50px;
           &.white { display: none; }
         }
@@ -97,6 +99,7 @@ aside {
         font-size: 12px;
         color: @gray-darker;
         text-transform: uppercase;
+        margin: 11px 15px 11px 0;
     }
     .nav {
         > li {
@@ -127,10 +130,9 @@ aside {
         &:hover { background-color: rgba(0,0,0,0.2);}
         border: 0;
         .navbar-header .navbar-brand {
-            padding: 5px 15px;
             color: fade(white, 70%);
             .logo {
-              &.white { display: block; }
+              &.white { display: inline-block; }
               &.theme { display: none; }
             }
             &:hover,
@@ -154,7 +156,7 @@ aside {
                 font-size: 14px;
                 .logo {
                   &.white {display: none;}
-                  &.theme {display: block;}
+                  &.theme {display: inline-block;}
                 }
                 &:hover,
                 &:focus {
