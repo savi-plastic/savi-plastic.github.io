@@ -187,7 +187,7 @@ header {
 header .header-content {
   position: relative;
   text-align: center;
-  padding: 100px 15px 100px;
+  padding: 200px 15px 120px;
   width: 100%;
 }
 header .header-content .header-content-inner h1 {
@@ -200,12 +200,16 @@ header .header-content .header-content-inner h1 {
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
+  display: none;
 }
 header .header-content .header-content-inner p {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.7);
   font-size: 16px;
   margin-bottom: 50px;
+}
+header .header-content .header-content-inner a {
+  display: none;
 }
 @media (min-width: 768px) {
   header {
@@ -227,11 +231,17 @@ header .header-content .header-content-inner p {
   header .header-content .header-content-inner h1 {
     font-size: 50px;
   }
+  header .header-content .header-content-inner hr {
+    display: block;
+  }
   header .header-content .header-content-inner p {
     font-size: 18px;
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+  header .header-content .header-content-inner a {
+    display: inline-block;
   }
 }
 .section-heading {
