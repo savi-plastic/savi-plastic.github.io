@@ -83,6 +83,10 @@ aside {
         .sans-serif-font;
         font-weight: 700;
         text-transform: uppercase;
+        .logo {
+          height: 50px;
+          &.white { display: none; }
+        }
         &:hover,
         &:focus {
             color: darken(@theme-primary, 10%);
@@ -123,7 +127,12 @@ aside {
         &:hover { background-color: rgba(0,0,0,0.2);}
         border: 0;
         .navbar-header .navbar-brand {
+            padding: 5px 15px;
             color: fade(white, 70%);
+            .logo {
+              &.white { display: block; }
+              &.theme { display: none; }
+            }
             &:hover,
             &:focus {
                 color: white;
@@ -132,6 +141,7 @@ aside {
         .nav > li > a,
         .nav > li > a:focus {
             color: fade(white, 70%);
+            padding: 20px 15px;
             &:hover {
                 color: white;
             }
@@ -142,6 +152,10 @@ aside {
             .navbar-header .navbar-brand {
                 color: @theme-primary;
                 font-size: 14px;
+                .logo {
+                  &.white {display: none;}
+                  &.theme {display: block;}
+                }
                 &:hover,
                 &:focus {
                     color: darken(@theme-primary, 10%);
