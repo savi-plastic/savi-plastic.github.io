@@ -175,6 +175,7 @@ header {
   position: relative;
   width: 100%;
   min-height: auto;
+  background: gray;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
